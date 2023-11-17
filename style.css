@@ -1,0 +1,157 @@
+nav{
+    background-color: black;
+    color: white;
+    height: 60px;
+    width: 1400px;
+    left: 0;
+    top: 0;
+    position: fixed;
+    letter-spacing: 55px;
+}
+.sky{
+    background-color: skyblue;
+    height: 200px;
+    width: 1400px;
+    margin-top: 40px;
+    display: flex;
+    gap: 100px;
+}
+.cloud{
+    position: absolute;
+}
+.cloud:nth-child(1){
+    
+
+}
+@keyframes wind{
+    from{left: -300px};
+    to{left: 100%};
+}
+.grass{
+    background-color: darkgreen;
+    margin-top: -10px;
+    width: 1400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alg{
+    display: flex;
+    gap: 180px;
+    margin-left: -50px;
+}
+.alg .tress{
+    margin-left: -400px;
+}
+.road{
+    background-color: rgba(0, 0, 0, 0.616);
+    margin-top: -20px;
+    height: 250px;
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.lights{
+    display: flex;
+    gap: 500px;
+}
+.post img{
+    max-width: 80px;
+    max-height: 80px;
+}
+.road p{
+    border: 3px dashed white;
+    margin-top: -13px;
+}
+.bike{
+    margin-top: -50px;
+    animation-name: drive;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.bik{
+    margin-top: 50px;
+    animation-name: drive;
+    animation-duration: 10s;
+    animation-fill-mode: backwards;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+}
+.bik img{
+    max-width: 100px;
+    max-height: 100px;
+}
+@keyframes drive{
+    from{
+      transform: translateX(-200px);
+    }
+    To{
+      transform: translateX(1400px);
+    }
+}
+.bike img{
+    max-width: 80px;
+    max-height: 80px;
+}
+.cat{
+    display: flex;
+    gap: 60px;
+}
+.ca img{
+    max-height: 60px;
+    max-height: 60px;
+}
+.cat{
+    animation-name: drive;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+@keyframes drive{
+    from{
+      transform: translateX(-200px);
+    }
+    To{
+      transform: translateX(1400px);
+    }
+}
+@keyframes jump{
+    0% { top: -40px}
+    50% { top: -100px}
+    100% {top:40px ;}
+}
+.bird3{
+     margin-left: -400px;
+     margin-top: 200px;
+    animation-name: swing;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+.bird3 img{
+    max-width: 90px;
+    max-height: 90px;
+}
+.bird1{
+    animation-name: swing;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+.bird1 img{
+    max-width: 90px;
+    max-height: 90px;
+    margin-top: 200px;
+}
+.peo{
+    display: flex;
+    margin-left: -600px;
+}
+@keyframes swing{
+    frpm{transform: translate(200px)}
+    to{transform: translate(1500px)}
+}
